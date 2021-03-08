@@ -37,19 +37,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int sum = 0;
+        int temp1 = Integer.parseInt(num1.getText().toString());
+        int temp2 = Integer.parseInt(num2.getText().toString());
 
         switch(v.getId()) {
             case R.id.add :
-                sum = Integer.parseInt(num1.getText().toString()) + Integer.parseInt(num2.getText().toString());;
+                sum = temp1 + temp2;
                 break;
             case R.id.sub :
-                sum = Integer.parseInt(num1.getText().toString()) - Integer.parseInt(num2.getText().toString());;
+                sum = temp1 - temp2;
                 break;
             case R.id.mul :
-                sum = Integer.parseInt(num1.getText().toString()) * Integer.parseInt(num2.getText().toString());;
+                sum = temp1 * temp2;
                 break;
             case R.id.div :
-                sum = Integer.parseInt(num1.getText().toString()) / Integer.parseInt(num2.getText().toString());;
+                sum = temp1 / temp2;
                 break;
         }
 
